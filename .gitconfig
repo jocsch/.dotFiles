@@ -1,0 +1,7 @@
+[user]
+	name = Markus Joschko
+	email = markus.joschko@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
