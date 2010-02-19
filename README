@@ -1,0 +1,6 @@
+I recently started to liberate myself from using an excellent, preassembled vim configuration.
+Instead I try to build up a custom vim configuration. I hope that this will give me some more
+insights into the plugins, how they are used and how to best map them. 
+
+I'll store this configuration and all other bash scripts I want to share between different computers
+in this repository. 

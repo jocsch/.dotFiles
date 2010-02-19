@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/opt/Jahia_EE_v6_SP1_r28889/webapps/spring-portlet-1.0-SNAPSHOT/WEB-INF/lib'
+let g:netrw_dirhist_2='/media/shared/portlet/src/main/webapp/WEB-INF'
+let g:netrw_dirhist_3='/opt/Jahia_EE_v6_SP1_r28889/conf'
