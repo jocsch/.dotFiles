@@ -8,7 +8,10 @@ set t_Co=256
 syntax on
 colorscheme inkpot
 
+"preceeds global plugin shortcuts
 let mapleader = ","
+"preceeds local/buffer plugin shortcuts
+let maplocalleader = "-"
 
 "line numbers
 set number
@@ -32,4 +35,9 @@ set smartindent
 "NERDTree Plugin
 :map <leader>d :NERDTreeToggle<cr>
 
-
+"vimclojure required
+syntax on
+filetype plugin indent on
+let vimclojure#NailgunClient = "/opt/clojure/vimclojure/ng"
+let clj_want_gorilla = 1
+let g:clj_paren_rainbow = 1
