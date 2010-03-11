@@ -36,8 +36,15 @@ set smartindent
 :map <leader>d :NERDTreeToggle<cr>
 
 "vimclojure required
-syntax on
 filetype plugin indent on
 let vimclojure#NailgunClient = "/opt/clojure/vimclojure/ng"
 let clj_want_gorilla = 1
 let g:clj_paren_rainbow = 1
+
+"execute the current line on shell
+:map <localleader>e :call ExecuteLine()<cr>
+function! ExecuteLine()
+	let line = getline(".")
+	let result = system(line)
+	echo result
+endfunction
