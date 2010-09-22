@@ -1,0 +1,11 @@
+To compile Command-T: rake make (in command-t directory. Install ruby, ruby-dev before)
+
+--KEYS-----------------
+<leader>d = NerdTree
+<leader>t = Command-T
+
+Search in files
+-----------------
+:grep pattern filepattern
+afterwards use :cw to open quickfix window. 
+Still searching for a better way
