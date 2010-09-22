@@ -1,3 +1,8 @@
+Init submodules
+----------------
+git submodule init
+git submodule update
+
 To compile Command-T: rake make (in command-t directory. Install ruby, ruby-dev before)
 
 --KEYS-----------------
