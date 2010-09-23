@@ -66,6 +66,10 @@ set listchars=tab:».,trail:.,extends:#,nbsp:.
 "disable trailing tabs for html,xml
 "autocmd filetype html,xml,jsp set listchars-=tab:>.
 
+"search across files
+":map <leader>g :vimgrep / . expand("<cword>") . / **/* <BAR> cw<left><left><left><left><left><left><left><left><left><left><left>
+:map <leader>g :vimgrep / getCurrentWord() / **/* <BAR> cw<left><left><left><left><left><left><left><left><left><left><left>
+
 "--------------------
 " PLUGINS
 " -------------------
