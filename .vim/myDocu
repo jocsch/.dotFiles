@@ -9,8 +9,14 @@ To compile Command-T: rake make (in command-t directory. Install ruby, ruby-dev 
 <leader>d = NerdTree
 <leader>t = Command-T
 
-Search in files
------------------
+--Search in files------
 :grep pattern filepattern
 afterwards use :cw to open quickfix window. 
 Still searching for a better way
+
+
+--Scala----------------
+<ctrl-x><ctrl-o> for completion
+F9 for compilation
+F1 for type information
+->see codefellow plugin for more detail
