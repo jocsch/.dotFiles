@@ -1,1 +1,1 @@
-java -Xmx512M -jar /opt/scala/sbt-0.7.4/sbt-launch.jar "$@"
+java -Xmx512M -jar /opt/scala/sbt-0.10/sbt-launch.jar "$@"
