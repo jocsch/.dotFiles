@@ -1,18 +1,44 @@
 "reload with :so %
+set nocompatible
 
 " Enable more colors for the colorschemes (by using CSApprox plugin)
 " also install in ubuntu ncurses-term " and put export TERM=xterm-256color to .bashrc
 " Install vim-gtk package to remove the 'must be compiled with gui support' warning
 set t_Co=256
 syntax on
-"colorscheme inkpot
-colorscheme mustang
 
-" Use pathogen to easily modify the runtime path to include all 
+" Use vundle to easily modify the runtime path to include all 
 " plugins under the ~/.vim/bundle directory
 filetype off
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+
+"https://github.com/gmarik/vundle#readme
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+" use :BundleInstall to install all other bundles
+Bundle 'gmarik/vundle'
+
+" Utility
+Bundle "repeat.vim"
+Bundle "surround.vim"
+Bundle 'scrooloose/nerdtree'
+Bundle "bmatheny/vim-scala"
+Bundle "SuperTab"
+Bundle "fholgado/minibufexpl.vim"
+
+
+" non github repos
+Bundle 'git://git.wincent.com/command-t.git'
+let g:CommandTMatchWindowAtTop=1 " show window at top
+
+"Color scheme
+Bundle "altercation/vim-colors-solarized"
+
+Bundle "cschlueter/vim-mustang"
+colorscheme mustang
+
 
 "preceeds global plugin shortcuts
 let mapleader = ","
@@ -57,9 +83,7 @@ set nobackup
 set noswapfile
 
 " set filetype stuff to on
-filetype on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 " Show trailing spaces and tabs
 set list
@@ -78,10 +102,10 @@ set listchars=tab:».,trail:.,extends:#,nbsp:.
 :map <leader>d :NERDTreeToggle<cr>
 
 "vimclojure required
-filetype plugin indent on
-let vimclojure#NailgunClient = "/opt/clojure/vimclojure/ng"
-let clj_want_gorilla = 1
-let g:clj_paren_rainbow = 1
+"filetype plugin indent on
+"let vimclojure#NailgunClient = "/opt/clojure/vimclojure/ng"
+"let clj_want_gorilla = 1
+"let g:clj_paren_rainbow = 1
 
 "execute the current line on shell
 :map <localleader>e :call ExecuteLine()<cr>
