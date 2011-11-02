@@ -27,6 +27,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle "bmatheny/vim-scala"
 Bundle "SuperTab"
 Bundle "fholgado/minibufexpl.vim"
+Bundle "Lokaltog/vim-easymotion"
 
 
 " non github repos
