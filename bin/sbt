@@ -1,1 +1,1 @@
-java -Xmx512M -jar /opt/scala/sbt-0.10/sbt-launch.jar "$@"
+java -Xmx512M -noverify -javaagent:/opt/jrebel/jrebel.jar -Drebel.log4j-plugin=false -jar /opt/scala/sbt-0.1x/sbt-launch.jar "$@"
