@@ -28,6 +28,7 @@ Bundle "bmatheny/vim-scala"
 Bundle "SuperTab"
 Bundle "fholgado/minibufexpl.vim"
 Bundle "Lokaltog/vim-easymotion"
+Bundle "vim-scripts/HTML-AutoCloseTag"
 
 Bundle "kien/ctrlp.vim"
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
