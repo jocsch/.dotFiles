@@ -29,6 +29,7 @@ Bundle "SuperTab"
 Bundle "fholgado/minibufexpl.vim"
 Bundle "Lokaltog/vim-easymotion"
 
+Bundle "kien/ctrlp.vim"
 
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
