@@ -30,6 +30,7 @@ Bundle "fholgado/minibufexpl.vim"
 Bundle "Lokaltog/vim-easymotion"
 
 Bundle "kien/ctrlp.vim"
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
