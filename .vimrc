@@ -33,9 +33,12 @@ Bundle "vim-scripts/HTML-AutoCloseTag"
 Bundle "kien/ctrlp.vim"
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
+Bundle "kchmck/vim-coffee-script"
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
-let g:CommandTMatchWindowAtTop=1 " show window at top
+"Bundle 'git://git.wincent.com/command-t.git'
+"let g:CommandTMatchWindowAtTop=1 " show window at top
 
 "Color scheme
 Bundle "altercation/vim-colors-solarized"
