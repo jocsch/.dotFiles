@@ -25,7 +25,9 @@ Bundle "repeat.vim"
 Bundle "surround.vim"
 Bundle 'scrooloose/nerdtree'
 Bundle "bmatheny/vim-scala"
-Bundle "SuperTab"
+Bundle "ervandew/supertab"
+"let g:SuperTabDefaultCompletionType = "context"
+
 Bundle "fholgado/minibufexpl.vim"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "vim-scripts/HTML-AutoCloseTag"
@@ -33,9 +35,19 @@ Bundle "vim-scripts/HTML-AutoCloseTag"
 Bundle "kien/ctrlp.vim"
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
+" snipmate + dependencies
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+
+Bundle "garbas/vim-snipmate"
+
+Bundle "kchmck/vim-coffee-script"
+
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
 let g:CommandTMatchWindowAtTop=1 " show window at top
+
 
 "Color scheme
 Bundle "altercation/vim-colors-solarized"

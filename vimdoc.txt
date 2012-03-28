@@ -1,0 +1,36 @@
+
+Surrounding plugin
+------------------
+http://www.catonmat.net/blog/vim-plugins-surround-vim/
+
+- add () brackets without spaces: use csW) instead of csW(          -> read: Change Surrounding W(movement command) 
+- tags: cswt<p> or dst 
+- use cspt<p> for paragraph. Other movements of vim are also supported (sentence, block, etc)
+- in visualmode use s or st<tag> to place surroundings
+- use ysiw" for inner word  foo!  -> foo is inner word
+
+Supertab plugin
+--------------
+Does autocompletion on context
+
+Tab to go further Shift Tab to go back.
+Also can use CTRL-n and CTRL-p
+
+Scope can be choosen manually by normal vim completion:
+
+CTRL-X CTRL-F       file names
+CTRL-X CTRL-L       whole lines
+CTRL-X CTRL-D       macro definitions (also in included files)
+CTRL-X CTRL-I       current and included files
+CTRL-X CTRL-K       words from a dictionary
+CTRL-X CTRL-T       words from a thesaurus
+CTRL-X CTRL-]       tags
+CTRL-X CTRL-V       Vim command line
+
+http://vimdoc.sourceforge.net/htmldoc/usr_24.html#24.3
+
+
+Snipmate
+-------
+Enter <keyword> and press tab. Keywords can be found in the corresponding snippet files
+See all available snippet keywords with <c-r><tab>
