@@ -43,10 +43,11 @@ Bundle "honza/snipmate-snippets"
 Bundle "garbas/vim-snipmate"
 
 Bundle "kchmck/vim-coffee-script"
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
-let g:CommandTMatchWindowAtTop=1 " show window at top
+"Bundle 'git://git.wincent.com/command-t.git'
+"let g:CommandTMatchWindowAtTop=1 " show window at top
 
 
 "Color scheme
