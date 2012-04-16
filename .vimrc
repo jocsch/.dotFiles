@@ -44,6 +44,7 @@ Bundle "garbas/vim-snipmate"
 
 Bundle "kchmck/vim-coffee-script"
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
