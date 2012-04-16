@@ -34,3 +34,12 @@ Snipmate
 -------
 Enter <keyword> and press tab. Keywords can be found in the corresponding snippet files
 See all available snippet keywords with <c-r><tab>
+
+Registers
+---------
+:reg see all registers
+"<nr><cmd>       use p or whatever to paste the content of the register with identifier <nr>
+<C-R><nr>    use it from insert mode or commandline <-- COOL
+"*yy         copy to clipboard
+"*p          paste from clipboard
+
