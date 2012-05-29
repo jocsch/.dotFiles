@@ -1,9 +1,15 @@
+Movement tips
+-----------------
+f/F - find
+t/T - find till (character before the find)
+,,fa - easy motion find a at position  in document
 
 Surrounding plugin
 ------------------
 http://www.catonmat.net/blog/vim-plugins-surround-vim/
 
 - add () brackets without spaces: use csW) instead of csW(          -> read: Change Surrounding W(movement command) 
+- replace by cs"' (replaces " with ')
 - tags: cswt<p> or dst 
 - use cspt<p> for paragraph. Other movements of vim are also supported (sentence, block, etc)
 - in visualmode use s or st<tag> to place surroundings
