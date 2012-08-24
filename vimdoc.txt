@@ -49,3 +49,11 @@ Registers
 "*yy         copy to clipboard
 "*p          paste from clipboard
 
+Send content to tmux (REPL)
+------------------------------
+https://github.com/jpalardy/vim-slime
+
+- open a tmux session in a konsole
+- use <C-c><C-c> to send the current paragraph to the tmux session
+- or visually mark a snippet and use <C-c><C-c>
+

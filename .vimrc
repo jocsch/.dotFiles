@@ -49,6 +49,9 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
 Bundle "chrisbra/SudoEdit.vim"
 Bundle "tsaleh/vim-matchit"
 
+Bundle "jpalardy/vim-slime"
+let g:slime_target = "tmux"
+
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 "let g:CommandTMatchWindowAtTop=1 " show window at top
